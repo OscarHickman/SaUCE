@@ -28,8 +28,21 @@ references:
     authors:
       - family-names: Hickman
         given-names: Oscar J.
+      - family-names: Bose
+        given-names: Sownak
+      - family-names: Wang
+        given-names: Kai
+      - family-names: Baugh
+        given-names: Carlton M.
+      - family-names: Li
+        given-names: Baojiu
     year: 2026
     status: preprint
+    url: "https://arxiv.org/abs/2611.13083"
+    identifiers:
+      - type: other
+        value: "arXiv:2611.13083"
+        description: arXiv preprint
   - type: article
     title: "SaUCE for the N-point Correlation Function: Unbiased Higher-Order Galaxy Clustering from Fewer Merger Trees"
     authors:

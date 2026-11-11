@@ -123,11 +123,25 @@ on a million points.
 
 If you use SaUCE, please cite the paper for the statistic you measure:
 
-* two-point functions: Hickman, O. J. et al. (2026), *Less is More: Unbiased
-  Galaxy Clustering from Fewer Merger Trees*, arXiv preprint;
+* two-point functions: Hickman, O. J., Bose, S., Wang, K., Baugh, C. M. &
+  Li, B. (2026), *Less is More: Unbiased Galaxy Clustering from Fewer Merger
+  Trees*, [arXiv:2611.13083][paper1];
 * N-point functions: Hickman, O. J. et al. (2026), *SaUCE for the N-point
   Correlation Function: Unbiased Higher-Order Galaxy Clustering from Fewer
   Merger Trees*, in prep.
+
+```bibtex
+@article{Hickman2026,
+  author        = {Hickman, Oscar J. and Bose, Sownak and Wang, Kai and
+                   Baugh, Carlton M. and Li, Baojiu},
+  title         = {Less is More: Unbiased Galaxy Clustering from Fewer
+                   Merger Trees},
+  year          = {2026},
+  eprint        = {2611.13083},
+  archivePrefix = {arXiv},
+  primaryClass  = {astro-ph.CO}
+}
+```
 
 The software itself can be cited with [`CITATION.cff`][citation].
 
@@ -140,5 +154,6 @@ MIT; see [LICENSE][license].
 [ex2]: https://github.com/OscarHickman/SaUCE/blob/main/examples/02_redshift_space.ipynb
 [ex3]: https://github.com/OscarHickman/SaUCE/blob/main/examples/03_npoint.ipynb
 [reference]: https://github.com/OscarHickman/SaUCE/blob/main/tests/reference.py
+[paper1]: https://arxiv.org/abs/2611.13083
 [citation]: https://github.com/OscarHickman/SaUCE/blob/main/CITATION.cff
 [license]: https://github.com/OscarHickman/SaUCE/blob/main/LICENSE
