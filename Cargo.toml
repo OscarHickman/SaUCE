@@ -1,0 +1,25 @@
+[package]
+name = "pysauce"
+version = "0.3.2"
+edition = "2021"
+description = "Pair and N-point counters for sparse partitions of periodic simulation boxes"
+license = "MIT"
+repository = "https://github.com/OscarHickman/SaUCE"
+readme = "README.md"
+
+[lib]
+name = "_pysauce"
+crate-type = ["cdylib"]
+path = "sauce/lib.rs"
+
+[dependencies]
+# The "extension-module" feature is enabled by maturin (see pyproject.toml) so
+# that `cargo test` can link against libpython.
+pyo3 = { version = "0.23", features = ["abi3-py39"] }
+numpy = "0.23"
+rayon = "1"
+
+[profile.release]
+lto = true
+codegen-units = 1
+panic = "abort"

@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+type: software
+title: "SaUCE: Sparse and Unbiased Clustering Estimator"
+version: 0.3.2
+license: MIT
+url: "https://github.com/OscarHickman/SaUCE"
+repository-code: "https://github.com/OscarHickman/SaUCE"
+authors:
+  - family-names: Hickman
+    given-names: Oscar
+    affiliation: "Institute for Computational Cosmology, Durham University"
+    email: oscar.hickman17@alumni.imperial.ac.uk
+keywords:
+  - cosmology
+  - galaxy clustering
+  - correlation functions
+  - N-body simulations
+  - astronomy
+abstract: >
+  Correlation function counters for galaxy catalogues drawn from sparse
+  subsets of periodic N-body simulations. Computes xi(r), xi(s, mu)
+  multipoles, and high-order N-point functions with unbiased corrections for
+  statistical under-sampling in m-of-k sparse samples.
+references:
+  - type: article
+    title: "Less is More: Unbiased Galaxy Clustering from Fewer Merger Trees"
+    authors:
+      - family-names: Hickman
+        given-names: Oscar J.
+    year: 2026
+    status: preprint
+  - type: article
+    title: "SaUCE for the N-point Correlation Function: Unbiased Higher-Order Galaxy Clustering from Fewer Merger Trees"
+    authors:
+      - family-names: Hickman
+        given-names: Oscar J.
+    year: 2026
+    status: in-preparation

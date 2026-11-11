@@ -1,0 +1,43 @@
+{% set name = "pysauce" %}
+{% set version = "0.3.2" %}
+
+package:
+  name: {{ name }}
+  version: {{ version }}
+
+source:
+  path: ..
+
+build:
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+
+requirements:
+  build:
+    - {{ compiler('rust') }}
+    - {{ compiler('c') }}
+  host:
+    - python
+    - pip
+    - maturin >=1.7,<2
+  run:
+    - python
+    - numpy >=1.23
+
+test:
+  imports:
+    - pysauce
+  commands:
+    - python -c "from pysauce import count_pairs_1d; print('ok')"
+
+about:
+  home: https://github.com/OscarHickman/SaUCE
+  license: MIT
+  license_file: LICENSE
+  summary: Pair and N-point counts for m of k partitions of a periodic box, corrected for the missing partitions
+  doc_url: https://github.com/OscarHickman/SaUCE
+  dev_url: https://github.com/OscarHickman/SaUCE
+
+extra:
+  recipe-maintainers:
+    - OscarHickman

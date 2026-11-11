@@ -1,0 +1,52 @@
+# Rust
+/target
+# machine-specific build flags
+.cargo/config.toml
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.venv/
+venv/
+.env
+.env.*
+build/
+dist/
+uv.lock
+
+# Tests and linters
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.hypothesis/
+.coverage
+.coverage.*
+htmlcov/
+.benchmarks/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Editors and OS
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Batch-job output
+slurm-*.out
+slurm-*.err
+*.log
+
+# Data files
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.fits
+*.pkl
+*.parquet
